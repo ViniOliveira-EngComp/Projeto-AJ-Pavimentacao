@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.fotos{
+	margin: 200px auto;
+	width:300px;
+	height:200px;
+	position: relative;
+	overflow: hidden;
+}	
+.img{
+	position: absolute;
+	opacity: 0;
+	animation: animacao 20s infinite;
+}
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		transform: scale(1,1);
+	}
+	50%{
+		opacity: 0;
+	}
+}
+.img:nth-child(1){
+}
+.img:nth-child(2){
+	animation-delay: 5s;
+}
+.img:nth-child(3){
+	animation-delay: 10s;
+}
+.img:nth-child(4){
+	animation-delay: 15s;
+}
+.img:nth-child(5){
+	animation-delay: 20s;
+}
+.img:nth-child(6){
+	animation-delay: 25s;
+}
+.img:nth-child(7){
+	animation-delay: 30s;
+}
+
+</style>
+</head>
+<body>
+	<section class="fotos">
+		<img class="img" src="fotos/img1.jpg">
+		<img class="img" src="fotos/img2.jpg">
+		<img class="img" src="fotos/img3.jpg">
+		<img class="img" src="fotos/img4.jpg">
+		<img class="img" src="fotos/img5.jpg">
+		<img class="img" src="fotos/img6.jpg">
+		<img class="img" src="fotos/img7.jpg">
+	</section>
+</body>
+</html>
